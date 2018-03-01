@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<title>Am I a Fucking Feminist?</title>
+<style type="text/css">
+    body {
+        font-family: Futura, Arial, sans-serif;
+        margin: none;
+        padding: none;
+        overflow: hidden;
+
+    }
+    #title {
+        font-size: 36px;
+        cursor: pointer;
+        margin:auto;
+        text-align: center;
+        width: 95%;
+        position: absolute;
+        top: 15%;
+        left: 2.5%;
+    }
+    .button {
+        position: absolute;
+        bottom: 20%;
+        font-size: 36px;
+        padding: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .twitter-share-button {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+    .button:hover {
+        background-color: #a00;;
+    }
+    div.fb-like {
+        position: absolute;
+        right: 90px;
+        top: 15px;
+
+
+    }
+    div.answer a:hover {
+        color: #a00;
+
+    }
+    #title:hover {
+        color: #a00;
+
+    }
+    #yes {
+        left: 15%;
+    }
+    #no {
+        right: 15%;
+
+    }
+    #question,#yesanswer,#noanswer {
+        font-size: 72px;
+        position: absolute;
+        top: 30%;
+        width: 95%;
+        left: 2.5%;
+        margin: auto;
+        text-align: center;
+    }
+    .answer {
+        display: none;
+
+    }
+    div.answer a {
+        color: #563c5c;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a#credits {
+        color: #666;
+        font-size: 12px;
+        bottom: 5px;
+        right: 15px;
+        position: absolute;
+    }
+    a#credits:hover {
+        color: #333;
+
+    }
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=2217213332";
+          fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://amiafuckingfeminist.com" data-count="none">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="fb-like" data-href="http://www.amiafuckingfeminist.com" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    <div id="title">Am I a fucking feminist?</div>
+    <div id="question">I believe in the complete equality of men and women.</div>
+    <div class="button" id="yes">Yes</div>
+    <div class="button" id="no">No</div>
+
+    <div class="answer" id="yesanswer">Yes, you are a fucking <a href="http://en.wikipedia.org/wiki/Feminism" target="_blank">feminist.</a></div>
+    <div class="answer" id="noanswer">No, you are not a fucking <a href="http://en.wikipedia.org/wiki/Feminism" target="_blank">feminist.</a></div>
+    <a id="credits" target="_blank" href="http://meredithfineman.com">Another Meredith Fineman production</a>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('div.button').click(function(){
+                var $this = $(this);
+                var whichButton = $this.attr('id');
+                $('#question, .button').hide();
+                $('#' + whichButton + 'answer').show();
+
+            });
+        });
+        $('#title').click(function(){
+            window.location.reload();
+
+        });
+
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-45398780-1', 'amiafuckingfeminist.com');
+                ga('send', 'pageview');
+
+                </script>
+</body>
+</html>
+
+
